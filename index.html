@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Desafio de hoje" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="desafio, devplay, html" />
+    <meta name="author" content="Letícia dos Santos" />
+    <title>Desafio DevPlay</title>
+    <link rel="icon" href="./img/sereia_icon.jpg" />
+  </head>
+
+  <body background="./img/sea_0.jpg">
+    <img
+      align="left"
+      src="./img/sereia_icon.jpg"
+      alt="sereias em desenho"
+      width="100px"
+      height="100px"
+    />
+    <h1 align="center">Fazendo o desafio</h1>
+    <h2 align="center">Estrurando Dados</h2>
+    <div id="conteudo-tabela">
+      <table
+        border="solid 2px #FFFFFF"
+        width="1280px"
+        style="background-color: rgba(255, 255, 255, 0.5);"
+      >
+        <tr>
+          <td id="menu-lateral" width="100px">
+            <ul>
+              <li>
+                <a
+                  href="http://sereismo.com/category/curiosidades/"
+                  target="_blank"
+                  >Conheça Sereias</a
+                >
+              </li>
+              <li>MENU 2</li>
+              <li>MENU 3</li>
+              <li>MENU 4</li>
+              <li>MENU 5</li>
+              <li>MENU 6</li>
+              <li>MENU 7</li>
+            </ul>
+          </td>
+          <td id="conteudo-principal">
+            <form method="GET" action="#">
+              <label for="nome">Nome: </label>
+              <br />
+              <input
+                type="text"
+                placeholder="Nome"
+                name="nome"
+                id="nome"
+                required
+              />
+              <br />
+              <br />
+              <label for="email">E-mail: </label>
+              <br />
+              <input
+                type="email"
+                placeholder="email@email.com"
+                name="email"
+                id="email"
+              />
+              <br />
+              <br />
+              <label for="idade">Idade: </label>
+              <br />
+              <input type="number" name="idade" id="idade" />
+              <br />
+              <br />
+              Gênero:
+              <br />
+              <label for="M">Masculino</label
+              ><input type="radio" name="sexo" id="M" />
+              <label for="F">Feminino</label
+              ><input type="radio" name="sexo" id="F" />
+              <label for="O">Outros</label
+              ><input type="radio" name="sexo" id="O" />
+              <br />
+              <br />
+              <label for="conhecimento">Você sabe programar?</label>
+              <br />
+              <select name="conhecimento" id="conhecimento">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+              <br />
+              <br />
+              Se sim, em quais linguagens?
+              <br />
+              <label for="PHP">PHP</label>
+              <input type="checkbox" id="PHP" value="PHP" />
+
+              <label for="JavaScript">JavaScript</label>
+              <input type="checkbox" id="JavaScript" value="JavaScript" />
+
+              <label for="Laravel">Laravel</label>
+              <input type="checkbox" id="Laravel" value="Laravel" />
+              <br />
+              <br />
+              <label for="foto">Envie sua foto</label>
+              <br />
+              <input type="file" id="foto" />
+              <br />
+              <br />
+              <label for="texto">Deixe um comentário</label>
+              <br />
+              <textarea id="texto" name="texto escrito">
+Deixe seu comentário</textarea
+              >
+              <br />
+              <br />
+              <input type="submit" value="Cadastrar" />
+              <input type="reset" value="Cancelar" />
+            </form>
+          </td>
+          <td>
+            <h1>Meus vídeos</h1>
+            <iframe
+              width="853"
+              height="480"
+              src="https://www.youtube.com/embed/Gq889mvbhMc"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </td>
+        </tr>
+        <table
+          border="solid 2px #FFFFFF"
+          style="background-color: rgba(255, 255, 255, 0.5);"
+          width="1280px"
+        >
+          <tr align="center">
+            <td>
+              <h1>Progresso no site</h1>
+              <label for="progresso">Você chegou ao fim</label>
+              <progress id="progresso" value="100" max="100"> 100% </progress>
+            </td>
+          </tr>
+        </table>
+      </table>
+    </div>
+  </body>
+</html>
